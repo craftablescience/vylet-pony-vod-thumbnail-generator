@@ -102,10 +102,10 @@ def draw_text_in_box(i: Image, dr: ImageDraw, d: str, f: ImageFont, bottom: bool
 
 if __name__ == "__main__":
     for date, thumbnail in STREAM_DATES.items():
-        image = Image.open(f"assets/{thumbnail}.jpg")
+        image = Image.open(f"../assets/{thumbnail}.jpg")
         draw = ImageDraw.Draw(image)
-        font = ImageFont.truetype("assets/Equestria.ttf", FONT_SIZE)
+        font = ImageFont.truetype("../assets/Equestria.ttf", FONT_SIZE)
 
         draw_text_in_box(image, draw, date, font, True)
 
-        image.save(f"out/{date}.jpg", quality="web_high")
+        image.save(f"../out/{date}.jpg", quality="web_high")
