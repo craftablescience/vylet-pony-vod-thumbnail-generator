@@ -1,3 +1,4 @@
+import os
 from PIL import Image, ImageDraw, ImageFont
 
 
@@ -44,7 +45,7 @@ STREAM_DATES = {
     "2024-12-14": "8_original",
     "2024-12-17": "8_original",
     "2024-12-22": "8_original",
-    "2024-12-27 (With Chat)": "2024_elf_stream",
+    "2024-12-27 (W/ Chat)": "2024_elf_stream",
     "2024-12-27 (Original)": "2024_elf_stream",
     "2024-12-29": "8_original",
     "2025-01-04": "8_original",
@@ -72,7 +73,7 @@ BOX_OFFSET = 64
 BOX_RADIUS = 16
 BOX_OUTLINE_WIDTH = 4
 TEXT_OFFSET = 24
-FONT_SIZE = 80
+FONT_SIZE = 110
 
 
 def draw_text_in_box(i: Image, dr: ImageDraw, d: str, f: ImageFont, bottom: bool) -> None:
@@ -101,6 +102,7 @@ def draw_text_in_box(i: Image, dr: ImageDraw, d: str, f: ImageFont, bottom: bool
 
 
 if __name__ == "__main__":
+    os.makedirs("../out", exist_ok=True)
     for date, thumbnail in STREAM_DATES.items():
         image = Image.open(f"../assets/{thumbnail}.jpg")
         draw = ImageDraw.Draw(image)
@@ -108,4 +110,4 @@ if __name__ == "__main__":
 
         draw_text_in_box(image, draw, date, font, True)
 
-        image.save(f"../out/{date}.jpg", quality="web_high")
+        image.save(f"../out/{date.replace('/', '_')}.jpg", quality="web_high")
