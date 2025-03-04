@@ -105,7 +105,11 @@ def draw_text_in_box(i: Image, dr: ImageDraw, d: str, f: ImageFont, bottom: bool
 if __name__ == "__main__":
     os.makedirs("../out", exist_ok=True)
     for date, thumbnail in STREAM_DATES.items():
-        image = Image.open(f"../assets/{thumbnail}.jpg")
+        input_path = f"../assets/{thumbnail}.jpg"
+        if os.path.exists(input_path):
+            continue
+
+        image = Image.open(input_path)
         draw = ImageDraw.Draw(image)
         font = ImageFont.truetype("../assets/Equestria.ttf", FONT_SIZE)
 
