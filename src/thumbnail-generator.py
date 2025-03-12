@@ -69,6 +69,8 @@ STREAM_DATES = {
     "2025-02-18 (2)": "8_original",
     "2025-02-26": "8_original",
     "2025-03-03": "8_original",
+    "2025-03-08": "8_original",
+    "2025-03-12": "8_original",
 }
 
 BOX_OFFSET = 64
