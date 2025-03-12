@@ -109,7 +109,8 @@ if __name__ == "__main__":
     os.makedirs("../out", exist_ok=True)
     for date, thumbnail in STREAM_DATES.items():
         input_path = f"../assets/{thumbnail}.jpg"
-        if os.path.exists(input_path):
+        output_path = f"../out/{date.replace('/', '_')}.jpg"
+        if os.path.exists(output_path):
             continue
 
         image = Image.open(input_path)
@@ -118,4 +119,4 @@ if __name__ == "__main__":
 
         draw_text_in_box(image, draw, date, font, True)
 
-        image.save(f"../out/{date.replace('/', '_')}.jpg", quality="web_high")
+        image.save(output_path, quality="web_high")
