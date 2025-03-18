@@ -82,6 +82,7 @@ STREAM_DATES = {
     "2025-03-16 (1)": "10_original",  # Lost media
     "2025-03-16 (2)": "10_original",
     "2025-03-16 (3)": "10_original",
+    "2025-03-18": "10_original",
 }
 
 BOX_OFFSET = 64
