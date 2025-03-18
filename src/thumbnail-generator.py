@@ -75,7 +75,8 @@ STREAM_DATES = {
     "2025-02-18 (2)": "10_original",
     "2025-02-26": "10_original",
     "2025-03-03": "10_original",
-    "2025-03-08": "10_original",  # Lost media
+    "2025-03-08 (1)": "10_original",  # Lost media
+    "2025-03-08 (2)": "10_original",  # Lost media
     "2025-03-12": "10_original",
     "2025-03-14": "10_original",
     "2025-03-16 (1)": "10_original",  # Lost media
