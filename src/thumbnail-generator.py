@@ -87,6 +87,9 @@ STREAM_DATES = {
     "2025-03-21": "10_original",
     "2025-03-23": "10_original",
     "2025-03-26": "10_original",
+    "2025-04-07 (Original)": "10_original",
+    "2025-04-07 (Censored)": "10_original",
+    "2025-04-08": "10_original",
 }
 
 BOX_OFFSET = 64
