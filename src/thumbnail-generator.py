@@ -14,6 +14,7 @@ THUMBNAIL_TEXT_COLOR = {
     "9": "#a0968d",
     "10_original": "#fd179e",
     "2024_elf_stream": "#435849",
+    "2025_neighem": "#755236",
 }
 STREAM_DATES = {
     "2021-09-24": "1_original",
@@ -90,6 +91,8 @@ STREAM_DATES = {
     "2025-04-07 (Original)": "10_original",
     "2025-04-07 (Censored)": "10_original",
     "2025-04-08": "10_original",
+    "2025-04-20": "2025_neighem",
+    "2025-04-26": "10_original",
 }
 
 BOX_OFFSET = 64
