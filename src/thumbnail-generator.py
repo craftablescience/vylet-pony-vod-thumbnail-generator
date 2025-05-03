@@ -94,6 +94,7 @@ STREAM_DATES = {
     "2025-04-20": "2025_neighem",
     "2025-04-26": "10_original",
     "2025-04-28": "10_original",
+    "2025-05-03": "10_original",
 }
 
 BOX_OFFSET = 64
