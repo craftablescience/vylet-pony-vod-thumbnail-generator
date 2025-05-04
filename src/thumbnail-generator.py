@@ -104,6 +104,8 @@ BOX_OUTLINE_WIDTH = 4
 TEXT_OFFSET = 24
 FONT_SIZE = 110
 
+BROKEN_HEIGHT_CHARS = ['(', ')', 'H']
+
 
 def draw_text_in_box(i: Image, dr: ImageDraw, d: str, f: ImageFont, bottom: bool) -> None:
     text_bbox = f.getbbox(d)
@@ -119,8 +121,10 @@ def draw_text_in_box(i: Image, dr: ImageDraw, d: str, f: ImageFont, bottom: bool
         width=BOX_OUTLINE_WIDTH
     )
 
-    if '(' in d or ')' in d:
-        position = (position[0], position[1] + text_height / 3)
+    for c in d:
+        if c in BROKEN_HEIGHT_CHARS:
+            position = (position[0], position[1] + text_height / 3)
+            break
 
     dr.text(
         xy=position,
