@@ -15,6 +15,7 @@ THUMBNAIL_TEXT_COLOR = {
     "10_original": "#fd179e",
     "2024_elf_stream": "#435849",
     "2025_neighem": "#755236",
+    "2025_vlog_horse_friends": "#259b5c",
 }
 STREAM_DATES = {
     "2021-09-24": "1_original",
@@ -96,6 +97,7 @@ STREAM_DATES = {
     "2025-04-28": "10_original",
     "2025-05-03 03H": "10_original",
     "2025-05-03 20H": "10_original",
+    "2025-05-12": "2025_vlog_horse_friends",
     "2025-05-13": "10_original",
 }
 
