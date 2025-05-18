@@ -99,6 +99,7 @@ STREAM_DATES = {
     "2025-05-03 20H": "10_original",
     "2025-05-12": "2025_vlog_horse_friends",
     "2025-05-13": "10_original",
+    "2025-05-18": "10_original",
 }
 
 BOX_OFFSET = 64
