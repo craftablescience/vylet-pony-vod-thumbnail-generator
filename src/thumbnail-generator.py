@@ -13,6 +13,7 @@ THUMBNAIL_TEXT_COLOR = {
     "8": "#fe2b43",
     "9": "#a0968d",
     "10_original": "#fd179e",
+    "11_original": "#4700ff",
     "2024_elf_stream": "#435849",
     "2025_neighem": "#755236",
     "2025_vlog_horse_friends": "#259b5c",
@@ -100,6 +101,8 @@ STREAM_DATES = {
     "2025-05-12": "2025_vlog_horse_friends",
     "2025-05-13": "10_original",
     "2025-05-18": "10_original",
+    "2025-05-21 (1)": "11_original",
+    "2025-05-21 (2)": "11_original",
 }
 
 BOX_OFFSET = 64
