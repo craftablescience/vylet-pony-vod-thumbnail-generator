@@ -13,7 +13,7 @@ THUMBNAIL_TEXT_COLOR = {
     "8": "#fe2b43",
     "9": "#a0968d",
     "10_original": "#fd179e",
-    "11_original": "#946aff",
+    "11_original": "#4700ff",
     "2024_elf_stream": "#435849",
     "2025_neighem": "#755236",
     "2025_vlog_horse_friends": "#259b5c",
