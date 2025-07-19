@@ -23,7 +23,7 @@ STREAM_DATES = {
     "2021-12-23": "1_original",
     "2022-04-24": "1_original",
     "2022-09-05": "2_original",
-    "2023-07-06": "3_original",
+    "2023-06-06": "3_original",
     "2023-11-01": "4_original",
     "2024-06-06": "4_original",
     "2024-07-04": "4_original",
@@ -123,6 +123,7 @@ STREAM_DATES = {
     "2025-07-16": "11_original",
     "2025-07-17": "11_original",
     "2025-07-18": "11_original",
+    "2025-07-19": "11_original",
 }
 
 BOX_OFFSET = 64
