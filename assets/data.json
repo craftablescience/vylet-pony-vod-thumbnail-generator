@@ -1,0 +1,366 @@
+{
+  "thumbnails": {
+    "1_original": "#6c69ee",
+    "2_original": "#2fb6ca",
+    "3_original": "#6066bc",
+    "4_original": "#541faf",
+    "5_original": "#707e52",
+    "6_original": "#8b75b3",
+    "7": "#a99980",
+    "8": "#fe2b43",
+    "9": "#a0968d",
+    "10_original": "#fd179e",
+    "11_original": "#4700ff",
+    "2024_elf_stream": "#435849",
+    "2025_neighem": "#755236",
+    "2025_vlog_horse_friends": "#259b5c"
+  },
+  "streams": {
+    "2021-09-24": {
+      "thumbnail": "1_original"
+    },
+    "2021-12-23": {
+      "thumbnail": "1_original"
+    },
+    "2022-04-24": {
+      "thumbnail": "1_original"
+    },
+    "2022-09-05": {
+      "thumbnail": "2_original"
+    },
+    "2023-06-06": {
+      "thumbnail": "3_original"
+    },
+    "2023-11-01": {
+      "thumbnail": "4_original"
+    },
+    "2024-06-06": {
+      "thumbnail": "4_original"
+    },
+    "2024-07-04": {
+      "thumbnail": "4_original"
+    },
+    "2024-07-17": {
+      "thumbnail": "5_original"
+    },
+    "2024-07-20": {
+      "thumbnail": "5_original"
+    },
+    "2024-07-26": {
+      "thumbnail": "5_original"
+    },
+    "2024-09-26": {
+      "thumbnail": "6_original"
+    },
+    "2024-10-03": {
+      "thumbnail": "8"
+    },
+    "2024-10-07": {
+      "thumbnail": "7"
+    },
+    "2024-10-23": {
+      "thumbnail": "8"
+    },
+    "2024-10-26": {
+      "thumbnail": "8"
+    },
+    "2024-10-29": {
+      "thumbnail": "8"
+    },
+    "2024-11-01": {
+      "thumbnail": "8"
+    },
+    "2024-11-02": {
+      "thumbnail": "9"
+    },
+    "2024-11-04": {
+      "thumbnail": "9"
+    },
+    "2024-11-07": {
+      "thumbnail": "9",
+      "lost_media": true
+    },
+    "2024-11-12": {
+      "thumbnail": "9"
+    },
+    "2024-11-16": {
+      "thumbnail": "9"
+    },
+    "2024-11-18": {
+      "thumbnail": "9"
+    },
+    "2024-11-22": {
+      "thumbnail": "9"
+    },
+    "2024-11-23": {
+      "thumbnail": "9"
+    },
+    "2024-11-25": {
+      "thumbnail": "9"
+    },
+    "2024-11-27": {
+      "thumbnail": "9"
+    },
+    "2024-11-29": {
+      "thumbnail": "9"
+    },
+    "2024-12-01 (1)": {
+      "thumbnail": "10_original"
+    },
+    "2024-12-01 (2)": {
+      "thumbnail": "10_original"
+    },
+    "2024-12-05 (1)": {
+      "thumbnail": "10_original"
+    },
+    "2024-12-05 (2)": {
+      "thumbnail": "10_original"
+    },
+    "2024-12-07": {
+      "thumbnail": "10_original"
+    },
+    "2024-12-14": {
+      "thumbnail": "10_original"
+    },
+    "2024-12-17": {
+      "thumbnail": "10_original"
+    },
+    "2024-12-22": {
+      "thumbnail": "10_original"
+    },
+    "2024-12-27 (W/ Chat)": {
+      "thumbnail": "2024_elf_stream"
+    },
+    "2024-12-27 (Original)": {
+      "thumbnail": "2024_elf_stream"
+    },
+    "2024-12-29": {
+      "thumbnail": "10_original"
+    },
+    "2025-01-04": {
+      "thumbnail": "10_original"
+    },
+    "2025-01-10": {
+      "thumbnail": "10_original"
+    },
+    "2025-01-12": {
+      "thumbnail": "10_original"
+    },
+    "2025-01-14": {
+      "thumbnail": "10_original"
+    },
+    "2025-01-17": {
+      "thumbnail": "10_original"
+    },
+    "2025-01-20": {
+      "thumbnail": "10_original"
+    },
+    "2025-01-23": {
+      "thumbnail": "10_original"
+    },
+    "2025-01-24": {
+      "thumbnail": "10_original"
+    },
+    "2025-01-27": {
+      "thumbnail": "10_original"
+    },
+    "2025-02-01": {
+      "thumbnail": "10_original"
+    },
+    "2025-02-08": {
+      "thumbnail": "10_original"
+    },
+    "2025-02-10": {
+      "thumbnail": "10_original"
+    },
+    "2025-02-13 (1)": {
+      "thumbnail": "10_original"
+    },
+    "2025-02-13 (2)": {
+      "thumbnail": "10_original"
+    },
+    "2025-02-15 (1)": {
+      "thumbnail": "10_original"
+    },
+    "2025-02-15 (2)": {
+      "thumbnail": "10_original"
+    },
+    "2025-02-18 (1)": {
+      "thumbnail": "10_original"
+    },
+    "2025-02-18 (2)": {
+      "thumbnail": "10_original"
+    },
+    "2025-02-26": {
+      "thumbnail": "10_original"
+    },
+    "2025-03-03": {
+      "thumbnail": "10_original"
+    },
+    "2025-03-08 (1)": {
+      "thumbnail": "10_original",
+      "lost_media": true
+    },
+    "2025-03-08 (2)": {
+      "thumbnail": "10_original",
+      "lost_media": true
+    },
+    "2025-03-12": {
+      "thumbnail": "10_original"
+    },
+    "2025-03-14": {
+      "thumbnail": "10_original"
+    },
+    "2025-03-16 (1)": {
+      "thumbnail": "10_original",
+      "lost_media": true
+    },
+    "2025-03-16 (2)": {
+      "thumbnail": "10_original"
+    },
+    "2025-03-16 (3)": {
+      "thumbnail": "10_original"
+    },
+    "2025-03-18": {
+      "thumbnail": "10_original"
+    },
+    "2025-03-21": {
+      "thumbnail": "10_original"
+    },
+    "2025-03-23": {
+      "thumbnail": "10_original"
+    },
+    "2025-03-26": {
+      "thumbnail": "10_original"
+    },
+    "2025-04-07 (Original)": {
+      "thumbnail": "10_original"
+    },
+    "2025-04-07 (Censored)": {
+      "thumbnail": "10_original"
+    },
+    "2025-04-08": {
+      "thumbnail": "10_original"
+    },
+    "2025-04-20": {
+      "thumbnail": "2025_neighem"
+    },
+    "2025-04-26": {
+      "thumbnail": "10_original"
+    },
+    "2025-04-28": {
+      "thumbnail": "10_original"
+    },
+    "2025-05-03 03H": {
+      "thumbnail": "10_original"
+    },
+    "2025-05-03 20H": {
+      "thumbnail": "10_original"
+    },
+    "2025-05-12": {
+      "thumbnail": "2025_vlog_horse_friends"
+    },
+    "2025-05-13": {
+      "thumbnail": "10_original"
+    },
+    "2025-05-18": {
+      "thumbnail": "10_original"
+    },
+    "2025-05-21 (1)": {
+      "thumbnail": "11_original"
+    },
+    "2025-05-21 (2)": {
+      "thumbnail": "11_original"
+    },
+    "2025-05-31": {
+      "thumbnail": "11_original"
+    },
+    "2025-06-04": {
+      "thumbnail": "11_original"
+    },
+    "2025-06-05": {
+      "thumbnail": "11_original"
+    },
+    "2025-06-26": {
+      "thumbnail": "11_original"
+    },
+    "2025-06-27": {
+      "thumbnail": "11_original"
+    },
+    "2025-06-28": {
+      "thumbnail": "11_original"
+    },
+    "2025-06-29": {
+      "thumbnail": "11_original"
+    },
+    "2025-07-01": {
+      "thumbnail": "11_original"
+    },
+    "2025-07-03": {
+      "thumbnail": "11_original"
+    },
+    "2025-07-09": {
+      "thumbnail": "11_original"
+    },
+    "2025-07-10": {
+      "thumbnail": "11_original"
+    },
+    "2025-07-11 (1)": {
+      "thumbnail": "11_original"
+    },
+    "2025-07-11 (2)": {
+      "thumbnail": "11_original"
+    },
+    "2025-07-13": {
+      "thumbnail": "11_original"
+    },
+    "2025-07-14 (Original)": {
+      "thumbnail": "11_original"
+    },
+    "2025-07-14 (Censored)": {
+      "thumbnail": "11_original"
+    },
+    "2025-07-15": {
+      "thumbnail": "11_original"
+    },
+    "2025-07-16": {
+      "thumbnail": "11_original"
+    },
+    "2025-07-17": {
+      "thumbnail": "11_original"
+    },
+    "2025-07-18": {
+      "thumbnail": "11_original"
+    },
+    "2025-07-19": {
+      "thumbnail": "11_original"
+    },
+    "2025-07-20": {
+      "thumbnail": "11_original"
+    },
+    "2025-07-21": {
+      "thumbnail": "11_original"
+    },
+    "2025-07-23": {
+      "thumbnail": "11_original"
+    },
+    "2025-07-25": {
+      "thumbnail": "11_original"
+    },
+    "2025-07-28": {
+      "thumbnail": "11_original"
+    },
+    "2025-07-29": {
+      "thumbnail": "11_original"
+    },
+    "2025-07-31": {
+      "thumbnail": "11_original"
+    },
+    "2025-08-01": {
+      "thumbnail": "11_original"
+    },
+    "2025-08-02": {
+      "thumbnail": "11_original"
+    }
+  }
+}

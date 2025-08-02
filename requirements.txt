@@ -1,1 +1,2 @@
 pillow
+webvtt-py

@@ -1,133 +1,7 @@
 import os
 from PIL import Image, ImageDraw, ImageFont
+from common import DATA
 
-
-THUMBNAIL_TEXT_COLOR = {
-    "1_original": "#6c69ee",
-    "2_original": "#2fb6ca",
-    "3_original": "#6066bc",
-    "4_original": "#541faf",
-    "5_original": "#707e52",
-    "6_original": "#8b75b3",
-    "7": "#a99980",
-    "8": "#fe2b43",
-    "9": "#a0968d",
-    "10_original": "#fd179e",
-    "11_original": "#4700ff",
-    "2024_elf_stream": "#435849",
-    "2025_neighem": "#755236",
-    "2025_vlog_horse_friends": "#259b5c",
-}
-STREAM_DATES = {
-    "2021-09-24": "1_original",
-    "2021-12-23": "1_original",
-    "2022-04-24": "1_original",
-    "2022-09-05": "2_original",
-    "2023-06-06": "3_original",
-    "2023-11-01": "4_original",
-    "2024-06-06": "4_original",
-    "2024-07-04": "4_original",
-    "2024-07-17": "5_original",
-    "2024-07-20": "5_original",
-    "2024-07-26": "5_original",
-    "2024-09-26": "6_original",
-    "2024-10-03": "8",
-    "2024-10-07": "7",
-    "2024-10-23": "8",
-    "2024-10-26": "8",
-    "2024-10-29": "8",
-    "2024-11-01": "8",
-    "2024-11-02": "9",
-    "2024-11-04": "9",
-    "2024-11-07": "9",  # Lost media
-    "2024-11-12": "9",
-    "2024-11-16": "9",
-    "2024-11-18": "9",
-    "2024-11-22": "9",
-    "2024-11-23": "9",
-    "2024-11-25": "9",
-    "2024-11-27": "9",
-    "2024-11-29": "9",
-    "2024-12-01 (1)": "10_original",
-    "2024-12-01 (2)": "10_original",
-    "2024-12-05 (1)": "10_original",
-    "2024-12-05 (2)": "10_original",
-    "2024-12-07": "10_original",
-    "2024-12-14": "10_original",
-    "2024-12-17": "10_original",
-    "2024-12-22": "10_original",
-    "2024-12-27 (W/ Chat)": "2024_elf_stream",
-    "2024-12-27 (Original)": "2024_elf_stream",
-    "2024-12-29": "10_original",
-    "2025-01-04": "10_original",
-    "2025-01-10": "10_original",
-    "2025-01-12": "10_original",
-    "2025-01-14": "10_original",
-    "2025-01-17": "10_original",
-    "2025-01-20": "10_original",
-    "2025-01-23": "10_original",
-    "2025-01-24": "10_original",
-    "2025-01-27": "10_original",
-    "2025-02-01": "10_original",
-    "2025-02-08": "10_original",
-    "2025-02-10": "10_original",
-    "2025-02-13 (1)": "10_original",
-    "2025-02-13 (2)": "10_original",
-    "2025-02-15 (1)": "10_original",
-    "2025-02-15 (2)": "10_original",
-    "2025-02-18 (1)": "10_original",
-    "2025-02-18 (2)": "10_original",
-    "2025-02-26": "10_original",
-    "2025-03-03": "10_original",
-    "2025-03-08 (1)": "10_original",  # Lost media
-    "2025-03-08 (2)": "10_original",  # Lost media
-    "2025-03-12": "10_original",
-    "2025-03-14": "10_original",
-    "2025-03-16 (1)": "10_original",  # Lost media
-    "2025-03-16 (2)": "10_original",
-    "2025-03-16 (3)": "10_original",
-    "2025-03-18": "10_original",
-    "2025-03-21": "10_original",
-    "2025-03-23": "10_original",
-    "2025-03-26": "10_original",
-    "2025-04-07 (Original)": "10_original",
-    "2025-04-07 (Censored)": "10_original",
-    "2025-04-08": "10_original",
-    "2025-04-20": "2025_neighem",
-    "2025-04-26": "10_original",
-    "2025-04-28": "10_original",
-    "2025-05-03 03H": "10_original",
-    "2025-05-03 20H": "10_original",
-    "2025-05-12": "2025_vlog_horse_friends",
-    "2025-05-13": "10_original",
-    "2025-05-18": "10_original",
-    "2025-05-21 (1)": "11_original",
-    "2025-05-21 (2)": "11_original",
-    "2025-05-31": "11_original",
-    "2025-06-04": "11_original",
-    "2025-06-05": "11_original",
-    "2025-06-26": "11_original",
-    "2025-06-27": "11_original",
-    "2025-06-28": "11_original",
-    "2025-06-29": "11_original",
-    "2025-07-01": "11_original",
-    "2025-07-03": "11_original",
-    "2025-07-09": "11_original",
-    "2025-07-10": "11_original",
-    "2025-07-11 (1)": "11_original",
-    "2025-07-11 (2)": "11_original",
-    "2025-07-13": "11_original",
-    "2025-07-14 (Original)": "11_original",
-    "2025-07-14 (Censored)": "11_original",
-    "2025-07-15": "11_original",
-    "2025-07-16": "11_original",
-    "2025-07-17": "11_original",
-    "2025-07-18": "11_original",
-    "2025-07-19": "11_original",
-    "2025-07-20": "11_original",
-    "2025-07-21": "11_original",
-    "2025-07-23": "11_original",
-}
 
 BOX_OFFSET = 64
 BOX_RADIUS = 16
@@ -161,22 +35,22 @@ def draw_text_in_box(i: Image, dr: ImageDraw, d: str, f: ImageFont, bottom: bool
         xy=position,
         text=d,
         font=f,
-        fill=THUMBNAIL_TEXT_COLOR[STREAM_DATES[d]]
+        fill=DATA["thumbnails"][DATA["streams"][d]["thumbnail"]]
     )
 
 
 if __name__ == "__main__":
-    os.makedirs("../out", exist_ok=True)
-    for date, thumbnail in STREAM_DATES.items():
-        input_path = f"../assets/{thumbnail}.jpg"
-        output_path = f"../out/{date.replace('/', '_')}.jpg"
+    os.makedirs("../out/thumbs", exist_ok=True)
+    for stream_name, stream_data in DATA["streams"].items():
+        input_path = f"../assets/thumbs/{stream_data["thumbnail"]}.jpg"
+        output_path = f"../out/thumbs/{stream_name.replace('/', '_')}.jpg"
         if os.path.exists(output_path):
             continue
 
         image = Image.open(input_path)
         draw = ImageDraw.Draw(image)
-        font = ImageFont.truetype("../assets/Equestria.ttf", FONT_SIZE)
+        font = ImageFont.truetype("../assets/thumbs/Equestria.ttf", FONT_SIZE)
 
-        draw_text_in_box(image, draw, date, font, True)
+        draw_text_in_box(image, draw, stream_name, font, True)
 
         image.save(output_path, quality="web_high")
